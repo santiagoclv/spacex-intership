@@ -13,7 +13,7 @@ As a user, I want to take a quick look at the past spaceX launches and see detai
 - The page should contain the next filters:
 
   - An input text with label "filter by mission name" field in order to do the search.
-  - A Search Button.
+  - A Search Button with label "Search".
 
 - The results section should contain:
   - Before the first search, show the initial state message “Please provide a search option and click in the search button”.

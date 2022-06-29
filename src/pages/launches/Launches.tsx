@@ -57,7 +57,7 @@ const Launches: React.FC = () => {
             <Grid container spacing={2} justifyContent="space-between">
               <Grid item md={6} xs={12}>
                 <FormControl fullWidth={true}>
-                  <InputLabel htmlFor="filter">Mission Name</InputLabel>
+                  <InputLabel htmlFor="filter">Filter by mission name.</InputLabel>
                   <Input
                     id="filter"
                     aria-describedby="filter-helper-text"

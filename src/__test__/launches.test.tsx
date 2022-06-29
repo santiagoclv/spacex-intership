@@ -26,7 +26,13 @@ describe('Launches', () => {
     // Clean up after the tests are finished.
     afterAll(() => server.close());
 
-    it('1 === 1', () => {
-        expect(1).toBe(1);
+    test('Should be an input text with label "filter by mission name" field in order to do the search.', () => {
+        const input = screen.queryByRole('textbox', { name: /filter by mission name/i });
+        expect(input).toBeInTheDocument();
+    });
+
+    test('There should be a search button with label "search"', () => {
+        const searchButton = screen.getByRole('button', { name: /search/i });
+        expect(searchButton).toBeInTheDocument();
     });
 });
